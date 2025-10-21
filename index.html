@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Aetherborn — Upgraded Release</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="boot" class="center">
+  <h1>Aetherborn</h1>
+  <div class="subtitle">A pixel roguelike — Classic SNES fantasy • Chiptune OST</div>
+  <div class="buttons">
+    <button id="startBtn">Start Game</button>
+    <button id="continueBtn">Continue</button>
+    <button id="settingsBtn">Settings</button>
+  </div>
+  <div class="credits">Upgraded build — assets included</div>
+</div>
+
+<canvas id="game" width="640" height="480" style="display:none"></canvas>
+
+<div id="ui" style="display:none">
+  <div id="hud">
+    <div id="hp">HP: <span id="hpText">--</span></div>
+    <div id="mana">Mana: <span id="manaText">--</span></div>
+    <div id="level">Lv: <span id="levelText">1</span></div>
+  </div>
+  <div id="menu" class="panel" style="display:none">
+    <button id="resumeBtn">Resume</button>
+    <button id="saveBtn">Save</button>
+    <button id="loadBtn">Load</button>
+    <button id="quitBtn">Quit to Title</button>
+  </div>
+</div>
+
+<audio id="music" loop src="audio/music_loop.wav"></audio>
+
+<script src="js/game-upgraded.js"></script>
+</body>
+</html>
